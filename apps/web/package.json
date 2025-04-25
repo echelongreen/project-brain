@@ -1,0 +1,35 @@
+{
+  "name": "@project-brain/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "next": "14.3.0", 
+    "@supabase/supabase-js": "^2.44.4",
+    "@tanstack/react-query": "^5.51.1",
+    "zustand": "^4.5.4",
+    "@trpc/client": "^11.0.0-rc.464",
+    "@trpc/react-query": "^11.0.0-rc.464",
+    "@trpc/server": "^11.0.0-rc.464",
+    "@project-brain/api": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18", 
+    "@types/react-dom": "^18", 
+    "@tailwindcss/postcss": "^4.0.0-alpha.17", 
+    "tailwindcss": "^4.0.0-alpha.17", 
+    "eslint": "^9",
+    "eslint-config-next": "14.3.0",
+    "@project-brain/eslint-config": "workspace:*",
+    "postcss": "^8.4.39"
+  }
+} 

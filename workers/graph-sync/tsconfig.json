@@ -1,0 +1,10 @@
+{
+  "extends": "@project-brain/typescript-config/base.json", 
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "module": "CommonJS" 
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+} 

@@ -1,0 +1,7 @@
+{
+  "root": true,
+  "extends": ["@project-brain/eslint-config/next.js"],
+  "parserOptions": {
+    "project": true
+  }
+} 

@@ -1,0 +1,19 @@
+{
+  "name": "@project-brain/db",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.44.4",
+    "neo4j-driver": "^5.22.0"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "eslint": "^9",
+    "@project-brain/eslint-config": "workspace:*"
+  }
+} 

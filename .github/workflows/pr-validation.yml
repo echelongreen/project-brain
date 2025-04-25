@@ -1,0 +1,36 @@
+name: PR Validation
+
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          # Use npm cache for faster installs
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json' 
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      # Add test step once testing is configured
+      # - name: Test
+      #   run: npm run test 
+
+      - name: Build
+        run: npm run build 

@@ -1,0 +1,4 @@
+{
+  "root": true,
+  "extends": ["@project-brain/eslint-config/library.js"]
+} 
