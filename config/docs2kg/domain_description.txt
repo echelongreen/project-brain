@@ -1,0 +1,23 @@
+Architectural Project Domain Description
+
+Project Brain is a platform for architectural projects that manages the entire lifecycle of building design and construction. An architectural project typically involves the following key entities and relationships:
+
+Projects are owned by Clients and led by Architects. Builders and Contractors work on projects to construct the designed buildings. Projects go through several phases including Establishment, Concept Design, Detailed Design, Documentation, and Construction.
+
+Buildings are located at specific Sites which have Addresses. Buildings contain various Spaces such as Rooms, Kitchens, Bathrooms, Bedrooms, and Living Areas. Buildings and their components must comply with Building Codes, Zoning Regulations, and Safety Standards.
+
+Projects involve multiple types of Documents including Fee Proposals, Drawings (Plans, Elevations, Sections, Floor Plans), Specifications, and Variations. Documents specify the use of Materials and have associated Costs within the project Budget.
+
+Tasks are organized within project Phases and may have dependencies on other Tasks. Checklists are used for quality control and verification. Tasks and project milestones have Deadlines and project teams track their completion status.
+
+Approvals and Permits are required from Planning Authorities at various stages of the project. Sustainability Ratings and Energy Efficiency standards may be applied to evaluate the environmental performance of the building design.
+
+The project timeline includes key Milestones that mark the completion of significant project phases or deliverables. Variations requested by Clients or necessitated by site conditions may affect the project Budget, Timeline, and Scope.
+
+Different stakeholders have different roles and permissions:
+- Directors have full control over all aspects of projects
+- Team members can view assigned projects and complete tasks
+- Clients can view their projects, approve fee proposals, and upload documents
+- Builders can view assigned projects, download plans, and submit variation requests
+
+All project data and documents are stored in a knowledge graph that captures metadata about documents, their layout structure, and semantic relationships between entities mentioned in the documents. 

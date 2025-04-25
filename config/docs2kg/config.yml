@@ -1,0 +1,58 @@
+# Docs2KG Configuration for Project Brain
+
+# Data directories for storing processed documents
+data_directory:
+  # Directory for input documents before processing
+  input_dir: ./data/input
+  # Directory for storing processed documents
+  output_dir: ./data/output
+  # Directory for storing embeddings
+  embeddings_dir: ./data/embeddings
+  # Directory for storing entity ontology
+  ontology_dir: ./config/docs2kg/ontology
+  # Entity list with architectural domain entities
+  entity_list: ./config/docs2kg/entity_list.csv
+  # Relation list with architectural domain relationships
+  relation_list: ./config/docs2kg/relation_list.csv
+  # Domain description text file
+  domain_description: ./config/docs2kg/domain_description.txt
+  # Ontology JSON file
+  ontology_json: ./config/docs2kg/ontology.json
+
+# Agent configuration for NER extraction
+agent:
+  name: "gpt-4o"
+  type: "openai"
+  config:
+    api_key: ${OPENAI_API_KEY}
+    model: "gpt-4o"
+    temperature: 0.1
+    top_p: 0.95
+    max_tokens: 2000
+
+# Neo4j connection settings
+neo4j:
+  uri: ${NEO4J_URI}
+  user: ${NEO4J_USER}
+  password: ${NEO4J_PASSWORD}
+  database: "neo4j"
+
+# Processing configuration
+processing:
+  # Extract metadata from documents
+  extract_metadata: true
+  # Extract layout information from documents
+  extract_layout: true
+  # Extract semantic information from documents
+  extract_semantic: true
+  # Chunk size for text processing
+  chunk_size: 1000
+  # Overlap size for chunks
+  chunk_overlap: 200
+  # Generate embeddings for chunks
+  generate_embeddings: true
+
+# Logging configuration
+logging:
+  level: "info"
+  file: "./logs/docs2kg.log" 

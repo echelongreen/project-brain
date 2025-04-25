@@ -1,0 +1,46 @@
+entity,entity_type
+Project,Project
+Client,Person
+Architect,Person
+Builder,Organization
+Contractor,Organization
+Planning Authority,Organization
+Building,Building
+Site,Location
+Address,Location
+Design Phase,Phase
+Construction Phase,Phase
+Concept Design,Phase
+Detailed Design,Phase
+Establishment,Phase
+Documentation,Phase
+Construction,Phase
+Task,Task
+Checklist,Task
+Fee Proposal,Document
+Variation,Document
+Drawing,Document
+Plan,Document
+Elevation,Document
+Section,Document
+Floor Plan,Document
+Specification,Document
+Materials,Material
+Budget,Financial
+Cost,Financial
+Timeline,Temporal
+Deadline,Temporal
+Milestone,Temporal
+Approval,Approval
+Permit,Approval
+Building Code,Regulation
+Zoning Regulation,Regulation
+Safety Standard,Regulation
+Sustainability Rating,Rating
+Energy Efficiency,Rating
+Room,Space
+Kitchen,Space
+Bathroom,Space
+Bedroom,Space
+Living Area,Space
+Outdoor Space,Space 
